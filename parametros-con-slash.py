@@ -12,4 +12,4 @@ def params(name):
     return 'El nombre es: {}'.format(name)
 
 # URL de prueba:
-# http://nachoad.pythonanywhere.com/params/nacho
+# http://url/params/nacho

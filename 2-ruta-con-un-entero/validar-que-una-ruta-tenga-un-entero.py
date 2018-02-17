@@ -14,4 +14,4 @@ def params(num= '0'):
     return 'El número recibido es: {}'.format(num)
 
 # URL de prueba:
-# http://nachoad.pythonanywhere.com/1234
+# http://url/1234

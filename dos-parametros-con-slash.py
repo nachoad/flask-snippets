@@ -14,5 +14,5 @@ def params(name= 'este es un valor por defecto', last_name = 'valor por defecto'
     return 'El nombre es: {}, last_name es: {}'.format(name, last_name)
 
 # URL de prueba:
-# http://nachoad.pythonanywhere.com/nacho/alonso
+# http://url/nacho/alonso
 # O una URL sin parámetros,que mostrará los valores por defecto

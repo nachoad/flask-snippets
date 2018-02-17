@@ -14,4 +14,4 @@ def params():
     return 'El nombre es: {} y su sueldo es: {}'.format(param, param2)
 
 # URL de prueba:
-# http://nachoad.pythonanywhere.com/params?nombre=nacho&sueldo=3000
+# http://url/params?nombre=nacho&sueldo=3000
