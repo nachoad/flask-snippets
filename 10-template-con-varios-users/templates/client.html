@@ -1,0 +1,9 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<h4> La lista es: </h4>
+{% for item in list %}
+  <p> {{ item }}</p>
+{% endfor %}
+
+{% endblock %}
