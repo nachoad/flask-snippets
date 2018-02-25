@@ -3,10 +3,11 @@
 {% block content %}
 
   {% from "_macro.html" import render_field %}
-  <form>
+  <form method="post">
     {{ render_field(form.username, class='form-control') }}
     {{ render_field(form.email, class='form-control')}}
     {{ render_field(form.comment, class='form-control')}}
+    <button type="submit"  class="btn btn-success" value="Submit">Enviar </button>
   </form>
 
 
