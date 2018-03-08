@@ -2,9 +2,11 @@ from flask import Flask
 from flask import render_template
 from flask import request
 from flask import make_response
+from flask import session
 import forms
 
 app = Flask(__name__)
+app.secret_key = 'mi_clave_secreta'
 
 @app.route('/')
 def index():
@@ -20,6 +22,12 @@ def cookie():
     response = make_response(render_template('cookie.html'))
     response.set_cookie('custom_cookie', 'Nacho')
     return response
+
+@app.route('/login', methods = ['GET', 'POST'])
+def login():
+        session['username'] = login_form.username.data
+    return render_template('index.html')
+
 
 
 if __name__ == '__main__':
