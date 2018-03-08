@@ -1,18 +1,16 @@
 from wtforms import Form
-from wtforms import StringField, TextField
-from wtforms.fields.html5 import EmailField
+from wtforms import StringField, PasswordField
 from wtforms import validators
 
-class CommentForm(Form):
+class LoginForm(Form):
     username = StringField('Username',
                             [
-                                validators.Required(message='El username es requerido.'),
+                                validators.DataRequired(message='El username es requerido.'),
                                 validators.length(min=2, max=7, message='Introduzca un username válido!')
 
                             ]
                            )
-    email = EmailField('Correo electronico',
+    password = PasswordField('Password',
                        [
-                           validators.Email(message='Introduzca un email válido.')
+                           validators.DataRequired(message='Contraseña requerida.')
                        ])
-    comment = TextField('Comentario')
