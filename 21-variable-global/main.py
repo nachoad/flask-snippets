@@ -18,7 +18,7 @@ def page_not_found(e):
 
 @app.before_request
 def before_request():
-    
+    g.test = 'Variable global'
 
 
 # Esta función necesita como parámetro siempre el último "response" que se envía.
