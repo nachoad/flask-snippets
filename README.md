@@ -1,6 +1,9 @@
 # Flask snippets
 
-Algunos trozos de código con apps flask con fines didácticos.
+Algunos trozos de código con apps **Flask**. Código subido con fines didácticos.
+
+En cada carpeta hay código de flask que puede ser ejecutado de forma individual. Cada carpeta resuelve una problemática.
+
 
 # Flask Framework
 
