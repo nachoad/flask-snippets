@@ -17,3 +17,5 @@ class User(db.Model):
     	self.password = self.__create_password(password)
     	self.email = email
     	
+    def __create_password(self, password):
+    	return generate_password_hash(password)
