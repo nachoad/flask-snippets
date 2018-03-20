@@ -5,7 +5,6 @@ from flask import url_for
 from flask import redirect
 from flask import session
 from flask import flash
-from flask import g
 import os
 
 import forms
