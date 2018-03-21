@@ -28,7 +28,7 @@ def before_request():
 	if 'username' not in session and request.endpoint in ['comment']:
 		return redirect(url_for('login'))
 	
-	if 'username' not in session and request.endpoint in ['login', 'create']:
+	elif 'username' in session and request.endpoint in ['login', 'create']:
 		return redirect(url_for('index'))
 
 @app.after_request
